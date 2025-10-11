@@ -1,0 +1,134 @@
+{
+  "owner": {
+    "name": "Bozhu12",
+    "email": "Bozhu12@foxmail.com",
+    "url": "https://github.com/Bozhu12"
+  },
+  "name": "Bozhu12-plugin",
+  "displayName": "生产力工具包市场",
+  "description": "个人生产力工具插件集合,适合中文 Windows 开发者",
+  "version": "1.0.0",
+  "website": "https://github.com/Bozhu12/productivity-toolkit-zh",
+  "plugins": [
+    {
+      "name": "productivity-toolkit-zh",
+      "displayName": "生产力工具包 (中文版)",
+      "version": "1.0.0",
+      "description": "包含 6 个实用命令、2 个专业代理和 3 个 Windows Hooks 的完整生产力工具包",
+      "author": {
+        "name": "Bozhu12",
+        "email": "Bozhu12@foxmail.com",
+        "url": "https://github.com/Bozhu12"
+      },
+      "license": "MIT",
+      "tags": ["productivity", "chinese", "windows", "fullstack", "devtools", "automation"],
+      "source": "./",
+      "homepage": "https://github.com/Bozhu12/productivity-toolkit-zh",
+      "keywords": [
+        "生产力",
+        "中文",
+        "Windows",
+        "全栈开发",
+        "代码审查",
+        "Git 工作流",
+        "项目扫描",
+        "快速修复",
+        "框架初始化"
+      ],
+      "requires": {
+        "claudeCode": ">=2.0.0"
+      },
+      "features": {
+        "commands": [
+          {
+            "name": "/quick-start",
+            "description": "快速启动新项目或功能开发"
+          },
+          {
+            "name": "/smart-review",
+            "description": "智能代码审查,深度分析代码质量、安全性和性能"
+          },
+          {
+            "name": "/quick-fix",
+            "description": "快速修复常见错误和问题"
+          },
+          {
+            "name": "/project-scan",
+            "description": "全面扫描项目,生成技术栈分析和优化建议"
+          },
+          {
+            "name": "/git-workflow",
+            "description": "智能 Git 工作流管理,自动化提交、分支和代码审查"
+          },
+          {
+            "name": "/framework-init",
+            "description": "快速初始化各种框架项目,自动配置最佳实践"
+          }
+        ],
+        "agents": [
+          {
+            "name": "fullstack-architect",
+            "description": "全栈架构师,专注于系统设计和技术选型"
+          },
+          {
+            "name": "code-quality-guardian",
+            "description": "代码质量守护者,全面审查代码质量、性能和安全"
+          }
+        ],
+        "hooks": [
+          {
+            "name": "success-notification.ps1",
+            "description": "任务完成时播放提示音并显示通知"
+          },
+          {
+            "name": "pre-commit-check.ps1",
+            "description": "提交前自动检查代码质量"
+          },
+          {
+            "name": "auto-backup.ps1",
+            "description": "重要操作前自动备份文件"
+          }
+        ]
+      },
+      "installation": {
+        "method": "git",
+        "url": "https://github.com/Bozhu12/productivity-toolkit-zh.git",
+        "branch": "main"
+      },
+      "screenshots": [
+        "https://raw.githubusercontent.com/Bozhu12/productivity-toolkit-zh/main/docs/images/smart-review-demo.png",
+        "https://raw.githubusercontent.com/Bozhu12/productivity-toolkit-zh/main/docs/images/project-scan-demo.png"
+      ],
+      "documentation": {
+        "readme": "https://github.com/Bozhu12/productivity-toolkit-zh#readme",
+        "changelog": "https://github.com/Bozhu12/productivity-toolkit-zh/blob/main/CHANGELOG.md",
+        "contributing": "https://github.com/Bozhu12/productivity-toolkit-zh/blob/main/CONTRIBUTING.md"
+      },
+      "support": {
+        "issues": "https://github.com/Bozhu12/productivity-toolkit-zh/issues",
+        "discussions": "https://github.com/Bozhu12/productivity-toolkit-zh/discussions"
+      }
+    }
+  ],
+  "categories": [
+    {
+      "name": "productivity",
+      "displayName": "生产力工具",
+      "plugins": ["productivity-toolkit-zh"]
+    },
+    {
+      "name": "code-quality",
+      "displayName": "代码质量",
+      "plugins": ["productivity-toolkit-zh"]
+    },
+    {
+      "name": "automation",
+      "displayName": "自动化",
+      "plugins": ["productivity-toolkit-zh"]
+    }
+  ],
+  "settings": {
+    "autoUpdate": true,
+    "checkUpdateInterval": "daily"
+  }
+}
