@@ -1,15 +1,15 @@
 {
-  "name": "Bozhu12-plugin",
+  "name": "cc-plugin",
   "version": "1.0.0",
-  "displayName": "Bozhu12-helper",
-  "description": "常用开发功能",
+  "displayName": "Claude Code 个人助手",
+  "description": "个人定制的 Claude Code 插件，包含多种命令、AI Agent、Hooks 和 MCP 服务器集成",
   "author": {
     "name": "Bozhu12",
     "email": "Bozhu12@foxmail.com",
     "url": "https://github.com/Bozhu12"
   },
   "license": "MIT",
-  "keywords": ["productivity", "chinese", "windows", "fullstack", "devtools"],
+  "keywords": ["productivity", "chinese", "windows", "fullstack", "devtools", "agent", "mcp"],
   "requires": {
     "claudeCode": ">=2.0.0"
   },
@@ -26,13 +26,16 @@
     ],
     "outputStyles": [
       "output-styles/**/*.md"
+    ],
+    "mcpServers": [
+      "mcp-servers/**/*.json"
     ]
   },
   "activation": {
     "always": true,
     "suggests": {
       "when": "project.hasFile('package.json')",
-      "message": "检测到 Node.js 项目,推荐使用 /quick-start 快速开始开发"
+      "message": "检测到项目，可使用 /think、/analyze、/codex 等命令进行分析和开发"
     }
   },
   "settings": {
