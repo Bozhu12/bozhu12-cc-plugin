@@ -5,17 +5,15 @@
         "name": "record-user-messages",
         "description": "记录用户发送的消息内容到 session-messages.json",
         "type": "command",
-        "command": "node \"{{pluginDir}}/hooks/record-messages.js\"",
-        "enabled": true
+        "command": "node \"{{pluginDir}}/hooks/record-messages.js\""
       }
     ],
     "Stop": [
       {
-        "name": "play-notification-sound",
-        "description": "AI 回复完成后播放提示音",
+        "name": "qywx-notification",
+        "description": "执行后企微通知",
         "type": "command",
-        "command": "powershell -WindowStyle Hidden -File \"{{pluginDir}}/hooks/play-mp3.ps1\"",
-        "enabled": false
+        "command": "curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxxxxxxxxxxxxx\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code：任务完成\\\"}}\""
       }
     ]
   }
