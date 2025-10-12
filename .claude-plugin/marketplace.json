@@ -8,10 +8,10 @@
   "displayName": "Claude Code 个人插件市场",
   "description": "个人定制的 Claude Code 插件集合，适合中文 Windows 开发者",
   "version": "1.0.0",
-  "website": "https://github.com/Bozhu12/cc-plugin",
+  "website": "https://github.com/Bozhu12/bozhu12-cc-plugin",
   "plugins": [
     {
-      "name": "cc-plugin",
+      "name": "bozhu12-cc-plugin",
       "displayName": "Claude Code 个人助手",
       "version": "1.0.0",
       "description": "包含 8 个实用命令、19 个专业 AI Agent、Windows Hooks 和 MCP 集成的完整工具包",
@@ -23,7 +23,7 @@
       "license": "MIT",
       "tags": ["productivity", "chinese", "windows", "fullstack", "devtools", "automation", "agent", "mcp"],
       "source": "./",
-      "homepage": "https://github.com/Bozhu12/cc-plugin",
+      "homepage": "https://github.com/Bozhu12/bozhu12-cc-plugin",
       "keywords": [
         "生产力",
         "中文",
@@ -177,21 +177,21 @@
       },
       "installation": {
         "method": "git",
-        "url": "https://github.com/Bozhu12/cc-plugin.git",
+        "url": "https://github.com/Bozhu12/bozhu12-cc-plugin.git",
         "branch": "main"
       },
       "screenshots": [
-        "https://raw.githubusercontent.com/Bozhu12/cc-plugin/main/docs/images/analyze-demo.png",
-        "https://raw.githubusercontent.com/Bozhu12/cc-plugin/main/docs/images/agent-route-demo.png"
+        "https://raw.githubusercontent.com/Bozhu12/bozhu12-cc-plugin/main/docs/images/analyze-demo.png",
+        "https://raw.githubusercontent.com/Bozhu12/bozhu12-cc-plugin/main/docs/images/agent-route-demo.png"
       ],
       "documentation": {
-        "readme": "https://github.com/Bozhu12/cc-plugin#readme",
-        "changelog": "https://github.com/Bozhu12/cc-plugin/blob/main/CHANGELOG.md",
-        "contributing": "https://github.com/Bozhu12/cc-plugin/blob/main/CONTRIBUTING.md"
+        "readme": "https://github.com/Bozhu12/bozhu12-cc-plugin#readme",
+        "changelog": "https://github.com/Bozhu12/bozhu12-cc-plugin/blob/main/CHANGELOG.md",
+        "contributing": "https://github.com/Bozhu12/bozhu12-cc-plugin/blob/main/CONTRIBUTING.md"
       },
       "support": {
-        "issues": "https://github.com/Bozhu12/cc-plugin/issues",
-        "discussions": "https://github.com/Bozhu12/cc-plugin/discussions"
+        "issues": "https://github.com/Bozhu12/bozhu12-cc-plugin/issues",
+        "discussions": "https://github.com/Bozhu12/bozhu12-cc-plugin/discussions"
       }
     }
   ],
@@ -199,27 +199,27 @@
     {
       "name": "productivity",
       "displayName": "生产力工具",
-      "plugins": ["cc-plugin"]
+      "plugins": ["bozhu12-cc-plugin"]
     },
     {
       "name": "code-quality",
       "displayName": "代码质量",
-      "plugins": ["cc-plugin"]
+      "plugins": ["bozhu12-cc-plugin"]
     },
     {
       "name": "automation",
       "displayName": "自动化",
-      "plugins": ["cc-plugin"]
+      "plugins": ["bozhu12-cc-plugin"]
     },
     {
       "name": "ai-agents",
       "displayName": "AI 代理",
-      "plugins": ["cc-plugin"]
+      "plugins": ["bozhu12-cc-plugin"]
     },
     {
       "name": "analysis",
       "displayName": "代码分析",
-      "plugins": ["cc-plugin"]
+      "plugins": ["bozhu12-cc-plugin"]
     }
   ],
   "settings": {

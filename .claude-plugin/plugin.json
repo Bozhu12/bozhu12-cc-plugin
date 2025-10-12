@@ -1,8 +1,8 @@
 {
-  "name": "cc-plugin",
-  "version": "1.0.0",
+  "name": "bozhu12-cc-plugin",
+  "version": "1.1.0",
   "displayName": "Claude Code 个人助手",
-  "description": "个人定制的 Claude Code 插件，包含多种命令、AI Agent、Hooks 和 MCP 服务器集成",
+  "description": "个人定制的 Claude Code 插件，包含多种命令、AI Agent、Hooks（含用户消息记录功能）和 MCP 服务器集成",
   "author": {
     "name": "Bozhu12",
     "email": "Bozhu12@foxmail.com",
@@ -22,7 +22,8 @@
     ],
     "hooks": [
       "hooks/**/*.ps1",
-      "hooks/**/*.bat"
+      "hooks/**/*.bat",
+      "hooks/**/*.js"
     ],
     "outputStyles": [
       "output-styles/**/*.md"
