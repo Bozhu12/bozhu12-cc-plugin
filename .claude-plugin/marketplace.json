@@ -5,8 +5,8 @@
     "url": "https://github.com/Bozhu12"
   },
   "name": "cc-plugin-marketplace",
-  "displayName": "Claude Code 个人插件市场",
-  "description": "个人定制的 Claude Code 插件集合，适合中文 Windows 开发者",
+  "displayName": "Claude Code Bozhu12个人插件",
+  "description": "个人定制的 Claude Code 插件集合",
   "version": "1.0.0",
   "website": "https://github.com/Bozhu12/bozhu12-cc-plugin",
   "plugins": [
@@ -193,33 +193,6 @@
         "issues": "https://github.com/Bozhu12/bozhu12-cc-plugin/issues",
         "discussions": "https://github.com/Bozhu12/bozhu12-cc-plugin/discussions"
       }
-    }
-  ],
-  "categories": [
-    {
-      "name": "productivity",
-      "displayName": "生产力工具",
-      "plugins": ["bozhu12-cc-plugin"]
-    },
-    {
-      "name": "code-quality",
-      "displayName": "代码质量",
-      "plugins": ["bozhu12-cc-plugin"]
-    },
-    {
-      "name": "automation",
-      "displayName": "自动化",
-      "plugins": ["bozhu12-cc-plugin"]
-    },
-    {
-      "name": "ai-agents",
-      "displayName": "AI 代理",
-      "plugins": ["bozhu12-cc-plugin"]
-    },
-    {
-      "name": "analysis",
-      "displayName": "代码分析",
-      "plugins": ["bozhu12-cc-plugin"]
     }
   ],
   "settings": {
