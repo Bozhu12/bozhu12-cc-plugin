@@ -3,7 +3,7 @@ argument-hint: "<内容描述>"
 
 ---
 
-# /json-snap - JSON快照
+# JSON快照
 
 ## 意图
 
