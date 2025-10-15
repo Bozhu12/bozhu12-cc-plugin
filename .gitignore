@@ -1,2 +1,6 @@
 /.idea/
 /.claude/
+
+# 环境变量配置文件（包含敏感信息）
+hooks/.env
+.env

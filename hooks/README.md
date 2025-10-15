@@ -65,9 +65,27 @@ node hooks/install-hooks.js
 
 **功能**：AI 回复完成后发送企业微信通知
 
-**配置要求**：
-- 需要配置企业微信群机器人 webhook 地址
-- 修改 `hooks.json` 中的 webhook key 为你的机器人 key
+**配置步骤**：
+
+1. **复制环境变量模板**：
+   ```bash
+   cp hooks/.env.example hooks/.env
+   ```
+
+2. **配置 Webhook Key**：
+   编辑 `hooks/.env`，填入你的企业微信机器人 webhook key：
+   ```bash
+   QYWX_WEBHOOK_KEY=your-webhook-key-here
+   ```
+
+3. **获取 Webhook Key**：
+   - 企业微信群聊 → 群设置 → 群机器人 → 添加机器人
+   - 复制 Webhook 地址中的 `key=` 后面的部分
+
+**安全说明**：
+- ✅ `.env` 文件已加入 `.gitignore`，不会被提交到 git
+- ✅ 敏感信息不会泄露到代码仓库
+- ⚠️ 请勿将 `.env` 文件分享给他人
 
 ## 禁用 Hooks
 

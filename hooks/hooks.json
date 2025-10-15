@@ -13,7 +13,7 @@
         "name": "qywx-notification",
         "description": "执行后企微通知",
         "type": "command",
-        "command": "curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxxxxxxxxxxxxx\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code：任务完成\\\"}}\""
+        "command": "[ -f \"{{pluginDir}}/hooks/.env\" ] && source \"{{pluginDir}}/hooks/.env\"; curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${QYWX_WEBHOOK_KEY}\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code: 任务完成\\\"}}\""
       }
     ]
   }
