@@ -1,44 +1,15 @@
 {
   "name": "bozhu12-cc-plugin",
   "version": "1.1.0",
-  "displayName": "Claude Code 个人助手",
-  "description": "个人定制的 Claude Code 插件，包含多种命令、AI Agent、Hooks（含用户消息记录功能）和 MCP 服务器集成",
+  "description": "Claude Code 个人助手 - 个人定制的 Claude Code 插件,包含多种命令、AI Agent、Hooks(含用户消息记录功能)和 MCP 服务器集成",
   "author": {
     "name": "Bozhu12",
     "email": "Bozhu12@foxmail.com",
     "url": "https://github.com/Bozhu12"
   },
+  "homepage": "https://github.com/Bozhu12/bozhu12-cc-plugin",
+  "repository": "https://github.com/Bozhu12/bozhu12-cc-plugin",
   "license": "MIT",
   "keywords": ["productivity", "chinese", "windows", "fullstack", "devtools", "agent", "mcp"],
-  "requires": {
-    "claudeCode": ">=2.0.0"
-  },
-  "components": {
-    "commands": [
-      "commands/**/*.md"
-    ],
-    "agents": [
-      "agents/**/*.md"
-    ],
-    "hooks": [
-      "hooks/**/*.ps1",
-      "hooks/**/*.bat",
-      "hooks/**/*.js"
-    ],
-    "outputStyles": [
-      "output-styles/**/*.md"
-    ]
-  },
-  "activation": {
-    "always": true,
-    "suggests": {
-      "when": "project.hasFile('package.json')",
-      "message": "检测到项目，可使用 /think、/analyze、/codex 等命令进行分析和开发"
-    }
-  },
-  "settings": {
-    "defaultLanguage": "zh-CN",
-    "platform": "windows",
-    "shellType": "powershell"
-  }
+  "hooks": "./hooks/hooks.json"
 }
