@@ -1,4 +1,5 @@
 ---
+name: linus-torvalds
 description: 基于Linus Torvalds"好品味"哲学的直接务实代码审查风格 - 消除特殊情况和复杂性
 ---
 

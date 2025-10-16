@@ -2,18 +2,21 @@
   "hooks": {
     "UserPromptSubmit": [
       {
-        "name": "record-user-messages",
         "description": "记录用户发送的消息内容到 session-messages.json",
         "type": "command",
-        "command": "node \"{{pluginDir}}/hooks/record-messages.js\""
+        "command": "node ./record-messages.js"
       }
     ],
     "Stop": [
       {
-        "name": "qywx-notification",
         "description": "执行后企微通知",
         "type": "command",
-        "command": "[ -f \"{{pluginDir}}/hooks/.env\" ] && source \"{{pluginDir}}/hooks/.env\"; curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${QYWX_WEBHOOK_KEY}\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code: 任务完成\\\"}}\""
+        "command": "[curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${QYWX_WEBHOOK_KEY}\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code: 任务完成\\\"}}\""
+      },
+      {
+        "description": "gotify通知",
+        "type": "command",
+        "command": "curl \"https://gotify.bozhu12.cc/message?token=${token}\" -F \"title=CC\" -F \"message=task success\" -F \"priority=5\""
       }
     ]
   }
