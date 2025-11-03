@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "课程会话信息",
+  "description": "记录当前课程会话的元数据和进度",
+
+  "planName": "课程计划名称 (如: python-basics)",
+  "startDate": "课程开始日期 ISO 8601 格式 (如: 2025-11-02)",
+  "sessionDir": "会话目录名 (如: 2025-11-02-python-basics)",
+
+  "currentTopic": 1,
+  "totalTopics": 10,
+  "completed": false,
+
+  "topicList": [
+    "变量与数据类型",
+    "控制流程",
+    "函数与模块",
+    "面向对象编程",
+    "文件操作",
+    "异常处理",
+    "常用库介绍",
+    "项目实践",
+    "性能优化",
+    "测试与调试"
+  ],
+
+  "topicStatus": {
+    "1": {
+      "name": "变量与数据类型",
+      "status": "completed",
+      "startTime": "2025-11-02T14:00:00Z",
+      "endTime": "2025-11-02T14:30:00Z",
+      "duration": 30,
+      "file": "01-变量与数据类型.md"
+    },
+    "2": {
+      "name": "控制流程",
+      "status": "in_progress",
+      "startTime": "2025-11-02T14:35:00Z",
+      "file": "02-控制流程.md"
+    }
+  },
+
+  "metadata": {
+    "studentConfig": "../study-config.md",
+    "planFile": "../plan/python-basics.md",
+    "progressFile": "./progress.md"
+  },
+
+  "timestamps": {
+    "created": "2025-11-02T14:00:00Z",
+    "lastUpdate": "2025-11-02T14:35:00Z",
+    "lastAccess": "2025-11-02T14:35:00Z"
+  },
+
+  "statistics": {
+    "totalLearningTime": 30,
+    "averageTopicTime": 30,
+    "completionRate": 0.1,
+    "testScores": []
+  },
+
+  "__comment": "此文件由 /start 创建,由 /continue 自动更新"
+}
