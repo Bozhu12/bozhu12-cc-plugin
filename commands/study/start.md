@@ -1,6 +1,6 @@
 ﻿---
-title: "/study:start - 开始课程"
-description: 开始教授规划好的课程
+title: "start - 开始课程"
+description: "开始教授规划好的课程"
 argument-hint: "<plan-name>"
 ---
 

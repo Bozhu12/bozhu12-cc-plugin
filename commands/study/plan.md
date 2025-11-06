@@ -1,6 +1,6 @@
 ﻿---
-title: "/study:plan - 课程规划"
-description: 为任意主题制定完整学习课程
+title: "plan - 课程规划"
+description: "为任意主题制定完整学习课程"
 argument-hint: "<topic>"
 ---
 

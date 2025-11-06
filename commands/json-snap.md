@@ -1,9 +1,9 @@
 ﻿---
-argument-hint: "<内容描述>"
-
+argument-hint: "<prompt>"
 ---
 
 # JSON快照
+
 
 ## 意图
 

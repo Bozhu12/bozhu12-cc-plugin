@@ -1,6 +1,6 @@
 ﻿---
-title: "/study:config - 制定学习偏好"
-description: 配置学习偏好和个性化选项
+title: "config - 制定学习偏好"
+description: "配置学习偏好和个性化选项"
 ---
 
 # 配置学习偏好

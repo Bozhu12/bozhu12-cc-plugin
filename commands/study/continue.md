@@ -1,6 +1,6 @@
 ﻿---
-title: "/study:continue - 继续学习"
-description: 继续当前课程或进入课程计划中的下一主题
+title: "continue - 继续学习"
+description: "继续当前课程或进入课程计划中的下一主题"
 argument-hint: "<session-dir>"
 ---
 

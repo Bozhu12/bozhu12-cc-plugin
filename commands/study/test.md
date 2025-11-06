@@ -1,5 +1,6 @@
 ﻿---
-description: 针对当前主题设计并实施测验
+title: "test - 测试理解"
+description: "针对当前主题设计并实施测验"
 ---
 
 # 检测学生理解

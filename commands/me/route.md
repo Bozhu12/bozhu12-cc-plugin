@@ -3,7 +3,7 @@ title: "Claude Agent 智能路由规划器"
 version: "v4.0"
 date: "2024-08-24"  
 author: "Claude Code"
-argument-hint: "[任务描述]"
+argument-hint: "<任务描述>"
 ---
 
 # Agent智能路由规划器
