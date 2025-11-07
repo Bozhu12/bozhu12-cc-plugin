@@ -29,6 +29,7 @@
       "name": "变量与数据类型",
       "status": "completed",
       "startTime": "2025-11-02T14:00:00Z",
+      "completedAt": "2025-11-02T14:30:00Z",
       "endTime": "2025-11-02T14:30:00Z",
       "duration": 30,
       "file": "01-变量与数据类型.md"
@@ -37,6 +38,7 @@
       "name": "控制流程",
       "status": "in_progress",
       "startTime": "2025-11-02T14:35:00Z",
+      "completedAt": null,
       "file": "02-控制流程.md"
     }
   },

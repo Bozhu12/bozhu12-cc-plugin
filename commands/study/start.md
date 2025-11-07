@@ -4,11 +4,13 @@ description: "开始教授规划好的课程"
 argument-hint: "<plan-name>"
 ---
 
+
+
 # 开始课程
 
 ## 命令格式
 ```
-/start <plan-name>
+/start [plan-name]
 ```
 
 **参数说明:**
@@ -34,7 +36,7 @@ argument-hint: "<plan-name>"
 - 从 `./plan/{plan-name}.md` 读取课程计划
 - 生成课程目录名: `YYYY-MM-DD-{plan-name}`（如 `2025-11-02-python-basics`）
 - 在 `./topic/` 下创建课程目录
-- 创建 `session-info.json` 记录会话元数据（参考 `./.templates/session-info-schema.json`）
+- 创建 `session-info.json` 记录会话元数据（参考 `${CLAUDE_PLUGIN_ROOT}/.templates/session-info-schema.json`）
   ```json
   {
     "planName": "python-basics",
@@ -45,8 +47,14 @@ argument-hint: "<plan-name>"
     "lastUpdate": "2025-11-02T14:30:00Z"
   }
   ```
-- 创建 `progress.md` 初始化进度追踪（参考 `./.templates/progress-template.md`）
+- 创建 `progress.md` 初始化进度追踪（参考 `${CLAUDE_PLUGIN_ROOT}/.templates/progress-template.md`）
 - 创建第一个主题文档 `01-{主题名}.md`
+
+**初始化状态说明（根据 workflow.md 判断标准）**：
+- `session-info.json` 中 `topicStatus[1].completedAt = null`
+- `session-info.json` 中 `topicStatus[1].status = "in_progress"`
+- 主题文档末尾不包含完成标记
+- 这些状态表示讲解中，不符合"完成讲解"的三层条件
 
 ### 2. 加载配置与课程计划
 1. 回顾学生的配置 `./study-config.md`（深度、学习风格、沟通风格等）
@@ -66,7 +74,12 @@ argument-hint: "<plan-name>"
 
 ### 标题部分
 ```
-🦌 **主题**：[课程中的当前主题]
+# [课程中的当前主题]
+
+> **课程**: 必备课程
+> **主题**: xxx基础概念
+> **日期**: 2025-11-03
+> **状态**: 已完成
 
 ---
 ```
@@ -76,7 +89,6 @@ argument-hint: "<plan-name>"
 1. 根据学生的深度水平进行清晰讲解
 2. 提供相关示例帮助理解概念
 3. 若学生偏好视觉型学习，加入适当的视觉辅助
-4. 若采用苏格拉底式沟通，加入互动性问题
 
 ### 授课循环中
 
@@ -98,6 +110,7 @@ argument-hint: "<plan-name>"
 在主要部分之间使用分隔线（---）。
 
 **如果一条回复无法完成课程内容：**
+
 - 使用 “# [主题]（续）”
 - 添加分隔线（---）
 - 从中断处继续讲解
@@ -105,11 +118,9 @@ argument-hint: "<plan-name>"
 ## 示例输出
 
 ```
-🦌 我已完成课程准备，让我们开始吧！
+# 光电效应概论
 
----
 
-**主题**：光电效应概论
 
 ---
 

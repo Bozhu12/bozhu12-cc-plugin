@@ -24,7 +24,7 @@ argument-hint: "<topic>"
 
 ### 1. 分析阶段
 先在代码环境中完成分析（不要向学生展示）：
-- 回顾学生的配置 `./study-config.md` （深度、学习风格等）
+- 阅读 `./study-config.md` , 回顾学生的配置  （深度、学习风格等）
 - 判断一位 {{student_depth}} 水平的学生应学习哪些 {{topic}} 知识
 - 找出他们可以进一步探索的高级主题
 - 标注课程中需要用到的数学公式
@@ -59,6 +59,7 @@ argument-hint: "<topic>"
 - 以复习与评估结束（例如 1.10）
 
 **格式：**
+
 ```
 # Main Curriculum
 
