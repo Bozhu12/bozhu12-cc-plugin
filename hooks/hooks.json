@@ -11,12 +11,12 @@
       {
         "description": "执行后企微通知",
         "type": "command",
-        "command": "[curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=${QYWX_WEBHOOK_KEY}\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code: 任务完成\\\"}}\""
+        "command": "[curl \"https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxxxxxxx\" -H \"Content-Type: application/json\" -d \"{\\\"msgtype\\\":\\\"text\\\",\\\"text\\\":{\\\"content\\\":\\\"Claude Code: 任务完成\\\"}}\""
       },
       {
         "description": "gotify通知",
         "type": "command",
-        "command": "curl \"https://gotify.bozhu12.cc/message?token=${token}\" -F \"title=CC\" -F \"message=task success\" -F \"priority=5\""
+        "command": "curl \"https://gotify.bozhu12.cc/message?token=xxxxxxxx\" -F \"title=CC\" -F \"message=task success\" -F \"priority=5\""
       }
     ]
   }
